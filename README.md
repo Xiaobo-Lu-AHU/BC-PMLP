@@ -22,21 +22,19 @@ For each file in this folder, including code and data, we will give the followin
 		
     - Folder Data: One test data and one training data are stored in it. We do not provide the original data in the whole folder, but only the encoded and segmented processed data.
     - Folder SVD++: 
-	    Folder data: Representation vectors of all users and items trained from SVD++ algorithm are stored, which are also the input of BC-PMLP;
-	    Code SVD++.py: The source code of SVD++ algorithm, most of which comes from the Internet.
+	    Code SVD++.py: The source code of SVD++ algorithm, most of which comes from the Internet. After running this program, an embedding vector file will be generated.
 
 More details about the code are given in the form of comments in the code file.
 
 Examples of running codes
 -------------------------
-In the context of appropriate configuration requirements, you can successfully run a set of experimental results with the following instructions：
+Before transfer learning, we need to get the embedding vectors trained by SVD++. You can execute the following code:
+```
+python SVD++.py
+```
+Later, the program will generate a file called `SVD++_emb_file_Netflix` based on the training data. Then, you can successfully get a set of experimental results with the following instructions：
 ```
 python run.py
 ```
 The parameter values required for program operation can be modified in the source code. The best empirical values of parameters are given in our paper.
 
-We provide the vector file `SVD++_emb_file` trained by SVD++ algorithm to help you directly transfer. If you want to complete the training process of SVD++, you can execute the following code:
-```
-python SVD++.py
-```
-Later, the program will generate the same file based on the training data.
