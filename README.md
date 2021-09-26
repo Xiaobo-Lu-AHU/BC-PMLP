@@ -1,15 +1,18 @@
 BC-PMLP
 =======
 The source code of transfer learning for recommendation system.
+
 Environment Settings
 ---------------------
-# The general environment of the experiment is given as follows： 
+The general environment of the experiment is given as follows： 
 
 	Python 3.5
 	torch 1.4.0
 	some necessary packages.
-
-# For each file in this folder, including code and data, we will give the following explanation:
+	
+Interpretation and description
+------------------------------
+For each file in this folder, including code and data, we will give the following explanation:
 
 	* Folder BC-PMLP: 
 		Folder data: Store the feature vectors trained by BC and derived from SVD++ in the form of dictionary;
