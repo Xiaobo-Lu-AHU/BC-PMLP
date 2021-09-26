@@ -15,7 +15,7 @@ Interpretation and description
 For each file in this folder, including code and data, we will give the following explanation:
 
     - Folder BC-PMLP: 
-	    Folder data: Store the feature vectors trained by BC and derived from SVD++ in the form of dictionary;
+	    Folder data: Store the feature vectors trained by BC and derived from SVD++ in the form of dictionary; This will help you verify the effectiveness of strategies.
 	    Code BC_PMLP.py: Store the construction code of PMLP (called REG) and the prediction code of BC (called CLA);
 	    Code Dataset.py: Some data preprocessing functions. If you run this code directly, this function file will not work;
 	    Code run.py: There is a main function inside。
