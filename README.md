@@ -1,9 +1,9 @@
 # BC-PMLP
 The source code of transfer learning for recommendation system.
 The general environment of the experiment is given as follows： 
-	· Python 3.5
-	· torch 1.4.0
-	· some necessary packages.
+	 Python 3.5
+	 torch 1.4.0
+	 some necessary packages.
 
 For each file in this folder, including code and data, we will give the following explanation:
 
