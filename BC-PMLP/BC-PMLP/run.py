@@ -51,10 +51,10 @@ class BC(object):
                         self.Q[j] -= self.lr * (1 - s) * self.P[u]
                         self.P[v] -= self.lr * (1 - r) * self.Q[i]
 
-                        self.P[u] -= self.regulation * self.P[u]
-                        self.Q[i] -= self.regulation * self.Q[i]
-                        self.Q[j] -= self.regulation * self.Q[j]
-                        self.P[v] -= self.regulation * self.P[v]
+                        self.P[u] += self.lr * self.regulation * self.P[u]
+                        self.Q[i] += self.lr * self.regulation * self.Q[i]
+                        self.Q[j] += self.lr * self.regulation * self.Q[j]
+                        self.P[v] += self.lr * self.regulation * self.P[v]
                         self.loss += -log(s) - log(r)
                     progress.update(1)
                 self.loss += 0.5 * self.regulation * (self.P * self.P).sum() + 0.5 * self.regulation * (
